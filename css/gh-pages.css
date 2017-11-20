@@ -29,12 +29,12 @@
   margin-left: -1.125em !important; }
 
 .btn-outline {
-  border-color: #337ab7;
-  color: #337ab7;
+  border-color: #007bff;
+  color: #007bff;
   background-color: transparent; }
   .btn-outline:hover, .btn-outline:active {
     color: #fff;
-    background-color: #337ab7; }
+    background-color: #007bff; }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -46,7 +46,7 @@ h1[id] {
 .row {
   padding-bottom: 20px; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .jumbotron {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -64,13 +64,13 @@ h1[id] {
   color: #ccc; }
   .footer a {
     border-bottom: 1px solid transparent;
-    color: #337ab7;
+    color: #007bff;
     font-weight: normal;
     transition: all 0.1s ease-in-out; }
     .footer a:hover {
-      border-color: #23527c;
+      border-color: #0056b3;
       border-width: 1px;
-      color: #23527c; }
+      color: #0056b3; }
   .footer small a {
     color: #999;
     border-bottom: 0; }
@@ -118,13 +118,13 @@ h1[id] {
     font-size: 16px; }
     .jumbotron .lead a {
       border-bottom: 1px solid transparent;
-      color: #337ab7;
+      color: #007bff;
       font-weight: normal;
       transition: all 0.1s ease-in-out; }
       .jumbotron .lead a:hover {
-        border-color: #23527c;
+        border-color: #0056b3;
         border-width: 1px;
-        color: #23527c; }
+        color: #0056b3; }
   .jumbotron .form-group {
     background: none; }
   .jumbotron .select2-wrapper {
@@ -144,10 +144,9 @@ h1[id] {
     margin-bottom: 15px;
     margin-left: 0; }
 
-.navbar-default {
-  background: rgba(255, 255, 255, 0.95);
-  border-width: 0 0 1px;
-  border-radius: 0; }
+.navbar-docs {
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 1rem; }
 
 .select2-result-repository {
   padding-top: 4px;
@@ -181,4 +180,4 @@ h1[id] {
   .select2-results__option--highlighted .select2-result-repository__title {
     color: white; }
   .select2-results__option--highlighted .select2-result-repository__forks, .select2-results__option--highlighted .select2-result-repository__stargazers, .select2-results__option--highlighted .select2-result-repository__description, .select2-results__option--highlighted .select2-result-repository__watchers {
-    color: #c2d7e9; }
+    color: #b3d7ff; }

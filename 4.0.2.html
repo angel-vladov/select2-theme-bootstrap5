@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>select2-bootstrap-theme</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
 	<link rel="stylesheet" href="css/select2-bootstrap.css">
 	<link rel="stylesheet" href="css/gh-pages.css">
@@ -16,41 +17,37 @@
 </head>
 
 	<body>
-		<header class="navbar navbar-default" role="navigation">
+		<header class="navbar navbar-expand-lg navbar-light bg-light navbar-docs" role="navigation">
 	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index.html">select2-bootstrap-theme</a>
-		</div>
+		<a class="navbar-brand" href="index.html">select2-bootstrap-theme</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
 		<div class="collapse navbar-collapse bs-navbar-collapse">
-			<ul class="nav navbar-nav">
+			<ul class="navbar-nav mr-auto">
 				
-					<li class="">
-						<a href="4.0.0.html">4.0.0</a>
+					<li class="nav-item">
+						<a class="nav-link" href="4.0.0.html">4.0.0</a>
 					</li>
 				
-					<li class="">
-						<a href="4.0.1.html">4.0.1</a>
+					<li class="nav-item">
+						<a class="nav-link" href="4.0.1.html">4.0.1</a>
 					</li>
 				
-					<li class="active">
-						<a href="4.0.2.html">4.0.2</a>
+					<li class="nav-item active">
+						<a class="nav-link" href="4.0.2.html">4.0.2</a>
 					</li>
 				
-					<li class="">
-						<a href="4.0.3.html">4.0.3</a>
+					<li class="nav-item">
+						<a class="nav-link" href="4.0.3.html">4.0.3</a>
 					</li>
 				
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="https://github.com/select2/select2-bootstrap-theme">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/select2/select2-bootstrap-theme">
 						<i class="fa fa-github"></i>
 						GitHub
 					</a>
@@ -410,8 +407,8 @@
 
 					</select>
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="button" data-select2-open="single-append-text">
-							<span class="glyphicon glyphicon-search"></span>
+						<button class="btn btn-secondary" type="button" data-select2-open="single-append-text">
+							<span class="fa fa-search"></span>
 						</button>
 					</span>
 				</div>
@@ -421,8 +418,8 @@
 				<label for="single-prepend-text" class="control-label">Select2 prepend</label>
 				<div class="input-group">
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="button" data-select2-open="single-prepend-text">
-							<span class="glyphicon glyphicon-search"></span>
+						<button class="btn btn-secondary" type="button" data-select2-open="single-prepend-text">
+							<span class="fa fa-search"></span>
 						</button>
 					</span>
 					<select id="single-prepend-text" class="form-control select2-single">
@@ -444,8 +441,8 @@
 						<option value="C">C</option>
 					</select>
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="button" data-select2-open="multi-append">
-							<span class="glyphicon glyphicon-search"></span>
+						<button class="btn btn-secondary" type="button" data-select2-open="multi-append">
+							<span class="fa fa-search"></span>
 						</button>
 					</span>
 				</div>
@@ -455,7 +452,7 @@
 				<label for="multi-prepend" class="control-label">Select2 multi prepend</label>
 				<div class="input-group">
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="button" data-select2-open="multi-prepend">
+						<button class="btn btn-secondary" type="button" data-select2-open="multi-prepend">
 							State
 						</button>
 					</span>
@@ -528,7 +525,7 @@
 				<label for="multi-prepend-append" class="control-label">Select2 multi append + prepend</label>
 				<div class="input-group">
 					<span class="input-group-btn">
-						<button class="btn btn-default" type="button" data-select2-open="multi-prepend-append">
+						<button class="btn btn-secondary" type="button" data-select2-open="multi-prepend-append">
 							State
 						</button>
 					</span>
@@ -604,7 +601,14 @@
 				</h1>
 			</div>
 
-			<p>The theme offers styles to display "small" and "large" Select2 widgets in <a href="http://getbootstrap.com/components/#input-groups">Bootstrap Input Groups</a> with <a href="http://getbootstrap.com/css/#forms-control-sizes">Bootstrap Control Sizing</a> classes applied (e. g. Select2 in <code>.input-group.input-group-sm</code> or <code>.input-group.input-group-lg</code>). You may also apply the <a href="http://getbootstrap.com/css/#forms-control-sizes">Bootstrap Control Sizing</a> classes directly to the <code>.select2-container</code> to alter its appearance.</p>
+			<p>
+				The theme offers styles to display "small" and "large" Select2 widgets in
+				<a href="https://getbootstrap.com/docs/4.0/components/input-group/">Bootstrap Input Groups</a> with
+				<a href="https://getbootstrap.com/docs/4.0/components/input-group/#sizing">Bootstrap Control Sizing</a> classes applied
+				(e. g. Select2 in <code>.input-group.input-group-sm</code> or <code>.input-group.input-group-lg</code>).
+				You may also apply the <a href="https://getbootstrap.com/docs/4.0/components/input-group/#sizing">Bootstrap Control Sizing</a>
+				classes directly to the <code>.select2-container</code> to alter its appearance.
+			</p>
 
 			<div class="alert alert-info" role="alert">
 				<h4>Requires select2.full.js</h4>
@@ -675,7 +679,7 @@
 <option value="TTZ">The Twilight Zone</option>
 
 					</select>
-					<p class="help-block"><a href="https://select2.github.io/examples.html#rtl">RTL support</a> via <code>dir="rtl"</code></p>
+					<small class="form-text text-muted"><a href="https://select2.github.io/examples.html#rtl">RTL support</a> via <code>dir="rtl"</code></small>
 				</div>
 				<div class="col-md-3">
 					<label for="select2-single-input-sm" class="control-label">col-md-3</label>
@@ -885,7 +889,7 @@
 <option value="TTZ">The Twilight Zone</option>
 
 					</select>
-					<p class="help-block">Example <a href="http://getbootstrap.com/css/#forms-help-text">block-level help text</a>.</p>
+					<small class="form-text text-muted">Example <a href="https://getbootstrap.com/docs/4.0/components/forms/#help-text">block-level help text</a>.</small>
 				</div>
 				<div class="col-md-3">
 					<label for="span_small" class="control-label">col-md-3</label>
@@ -1242,68 +1246,69 @@
 				Horizontal form group sizes
 			</h2>
 
-			<p>The theme's styles work in <a href="http://getbootstrap.com/css/?#forms-horizontal">Bootstrap's Horizontal Forms</a> and offers support for <a href="http://getbootstrap.com/css/?#horizontal-form-group-sizes">Horizontal Form Group Sizes</a>, too.</p>
+			<p>
+				The theme's styles work in <a href="https://getbootstrap.com/docs/4.0/components/forms/#horizontal-form">Bootstrap's Horizontal Forms</a>
+				and offers support for <a href="https://getbootstrap.com/docs/4.0/components/forms/#horizontal-form-label-sizing">Horizontal Form Group Sizes</a>, too.
+			</p>
 
 			<form class="form-horizontal">
-				<div class="form-group form-group-lg">
-					<label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label col-form-label-lg" for="formGroupInputLarge">Large label</label>
 
 					<div class="col-sm-5">
-						<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
+						<input class="form-control form-control-lg" type="text" id="formGroupInputLarge" placeholder="Large input">
 					</div>
 
 					<div class="col-sm-5">
-						<select id="select2-button-addons-single-input-group-sm" class="form-control js-data-example-ajax">
+						<select class="form-control form-control-lg js-data-example-ajax">
 							<option value="2126244" selected="selected">twbs/bootstrap</option>
 						</select>
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm">
-					<label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+				<div class="form-group form-group-sm row">
+					<label class="col-sm-2 col-form-label col-form-label-sm" for="formGroupInputSmall">Small label</label>
 
 					<div class="col-sm-5">
-						<input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+						<input class="form-control form-control-sm" type="text" id="formGroupInputSmall" placeholder="Small input">
 					</div>
 
 					<div class="col-sm-5">
-						<select id="select2-button-addons-single-input-group-sm" class="form-control js-data-example-ajax" dir="rtl">
+						<select class="form-control form-control-sm js-data-example-ajax" dir="rtl">
 							<option value="2126244" selected="selected">twbs/bootstrap</option>
 						</select>
 					</div>
 				</div>
 
-				<div class="form-group">
-					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				<div class="form-group row">
+					<label for="select2-horizontal-3" class="col-sm-2 col-form-label">Email</label>
 					<div class="col-sm-10">
-						<select id="select2-button-addons-single-input-group-sm" class="form-control js-data-example-ajax" multiple>
+						<select id="select2-horizontal-3" class="form-control js-data-example-ajax" multiple>
 							<option value="2126244" selected="selected">twbs/bootstrap</option>
 							<option value="3620194" selected="selected">select2/select2</option>
 						</select>
 					</div>
 				</div>
 
-				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				<div class="form-group row">
+					<label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
 
 					<div class="col-sm-10">
 						<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
 					</div>
 				</div>
 
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Remember me
-							</label>
-						</div>
+				<div class="form-group row">
+					<div class="form-check col-sm-offset-2 col-sm-10">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input"> Remember me
+						</label>
 					</div>
 				</div>
 
-				<div class="form-group">
+				<div class="form-group row">
 					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-default">Sign in</button>
+						<button type="submit" class="btn btn-secondary">Sign in</button>
 					</div>
 				</div>
 			</form>
@@ -1317,7 +1322,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<form class="form-inline">
-						<div class="form-group">
+						<div class="form-group mb-2 mr-sm-2 mb-sm-0">
 							<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 							<div class="input-group">
 								<div class="input-group-addon">$</div>
@@ -1394,15 +1399,15 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<form class="form-inline">
-						<div class="form-group">
+						<div class="form-group mb-2 mr-sm-2 mb-sm-0">
 							<label class="sr-only" for="exampleInputEmail3">Email address</label>
 							<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
 						</div>
-						<div class="form-group">
+						<div class="form-group mb-2 mr-sm-2 mb-sm-0">
 							<label class="sr-only" for="exampleInputPassword3">Password</label>
 							<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
 						</div>
-						<select class="form-control select2-single">
+						<select class="form-control select2-single mb-2 mr-sm-2 mb-sm-0">
 							<option></option>
 							<optgroup label="Alaskan/Hawaiian Time Zone">
 	<option value="AK">Alaska</option>
@@ -1464,12 +1469,12 @@
 <option value="TTZ">The Twilight Zone</option>
 
 						</select>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Remember me
+						<div class="form-check mb-2 mr-sm-2 mb-sm-0">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input"> Remember me
 							</label>
 						</div>
-						<button type="submit" class="btn btn-default">Sign in</button>
+						<button type="submit" class="btn btn-secondary">Sign in</button>
 					</form>
 				</div>
 			</div>
@@ -1480,14 +1485,14 @@
 				</h1>
 			</div>
 
-			<p>Tests for Select2 widgets used in context with Bootstrap's <a href="http://getbootstrap.com/components/#input-groups-buttons">Button Addons</a>.</p>
+			<p>Tests for Select2 widgets used in context with Bootstrap's <a href="https://getbootstrap.com/docs/4.0/components/input-group/#button-addons">Button Addons</a>.</p>
 
 			<div class="row">
 				<div class="col-md-7">
 					<label for="select2-button-addons-single-input-group-sm" class="control-label">Select2 custom data load</label>
 					<div class="input-group input-group-sm">
 						<div class="input-group-btn">
-							<button class="btn btn-default" type="button" data-select2-open="select2-button-addons-single-input-group-sm">
+							<button class="btn btn-secondary" type="button" data-select2-open="select2-button-addons-single-input-group-sm">
 								State
 							</button>
 						</div>
@@ -1500,8 +1505,8 @@
 					<label for="select2-button-addons-multiple-input-group-sm" class="control-label">col-md-5</label>
 					<div class="input-group input-group-sm">
 						<span class="input-group-btn">
-							<button class="btn btn-default" type="button" data-select2-open="select2-button-addons-multiple-input-group-sm">
-								<span class="glyphicon glyphicon-search"></span>
+							<button class="btn btn-secondary" type="button" data-select2-open="select2-button-addons-multiple-input-group-sm">
+								<span class="fa fa-search"></span>
 							</button>
 						</span>
 						<select id="select2-button-addons-multiple-input-group-sm" class="form-control select2-multiple" multiple>
@@ -1576,7 +1581,7 @@
 					<label for="select2-button-addons-single-input-group" class="control-label">Select2 custom data load</label>
 					<div class="input-group">
 						<div class="input-group-btn">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
 								Action <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">
@@ -1596,8 +1601,8 @@
 					<label for="select2-input-group-append" class="control-label">col-md-5</label>
 					<div class="input-group has-warning">
 						<span class="input-group-btn">
-							<button class="btn btn-default" type="button" data-select2-open="select2-input-group-append">
-								<span class="glyphicon glyphicon-search"></span>
+							<button class="btn btn-secondary" type="button" data-select2-open="select2-input-group-append">
+								<span class="fa fa-search"></span>
 							</button>
 						</span>
 						<select id="select2-input-group-append" class="form-control select2-multiple" multiple>
@@ -1676,8 +1681,8 @@
 							<option value="3620194" selected="selected">select2/select2</option>
 						</select>
 						<span class="input-group-btn">
-							<button class="btn btn-default" type="button" data-select2-open="select2-button-addons-single-input-group-lg">
-								<span class="glyphicon glyphicon-search"></span>
+							<button class="btn btn-secondary" type="button" data-select2-open="select2-button-addons-single-input-group-lg">
+								<span class="fa fa-search"></span>
 							</button>
 						</span>
 					</div>
@@ -1686,8 +1691,8 @@
 					<label for="select2-button-addons-multi-input-group-lg" class="control-label">col-md-5</label>
 					<div class="input-group input-group-lg">
 						<span class="input-group-btn">
-							<button class="btn btn-default" type="button" data-select2-open="select2-button-addons-multi-input-group-lg">
-								<span class="glyphicon glyphicon-search"></span>
+							<button class="btn btn-secondary" type="button" data-select2-open="select2-button-addons-multi-input-group-lg">
+								<span class="fa fa-search"></span>
 							</button>
 						</span>
 						<select id="select2-button-addons-multi-input-group-lg" class="form-control select2-multiple" multiple>
@@ -1759,7 +1764,11 @@
 				<h1 id="disabled-inputs">Disabled inputs and options</h1>
 			</div>
 
-			<p>The theme applies Bootstrap's styles for <a href="http://getbootstrap.com/css/#forms-control-states">disabled input elements</a> and for disabled dropdown options to the Select2 widgets and its options. Also see Select2's documentation on its "<a href="https://select2.github.io/examples.html#disabled">Disabled mode</a>".</p>
+			<p>
+				The theme applies Bootstrap's styles for <a href="https://getbootstrap.com/docs/4.0/components/forms/#disabled-forms">disabled input elements</a>
+				and for disabled dropdown options to the Select2 widgets and its options. Also see Select2's documentation on its
+				"<a href="https://select2.github.io/examples.html#disabled">Disabled mode</a>".
+			</p>
 
 			<div class="row">
 				<div class="col-md-6">
@@ -1929,7 +1938,21 @@
 </div>
 
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous">
+</script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.full.js"></script>
 
 		<script src="js/bootstrap.min.js"></script>
@@ -1973,9 +1996,9 @@
 				}
 
 				markup += "<div class='select2-result-repository__statistics'>" +
-							"<div class='select2-result-repository__forks'><span class='glyphicon glyphicon-flash'></span> " + repo.forks_count + " Forks</div>" +
-							"<div class='select2-result-repository__stargazers'><span class='glyphicon glyphicon-star'></span> " + repo.stargazers_count + " Stars</div>" +
-							"<div class='select2-result-repository__watchers'><span class='glyphicon glyphicon-eye-open'></span> " + repo.watchers_count + " Watchers</div>" +
+							"<div class='select2-result-repository__forks'><span class='fa fa-flash'></span> " + repo.forks_count + " Forks</div>" +
+							"<div class='select2-result-repository__stargazers'><span class='fa fa-star'></span> " + repo.stargazers_count + " Stars</div>" +
+							"<div class='select2-result-repository__watchers'><span class='fa fa-ey'></span> " + repo.watchers_count + " Watchers</div>" +
 						"</div>" +
 					"</div></div>";
 
