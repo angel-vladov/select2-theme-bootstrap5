@@ -148,6 +148,30 @@ h1[id] {
   border-bottom: 1px solid #ced4da;
   margin-bottom: 1rem; }
 
+.has-warning .input-group-addon {
+  background-color: #ffd559;
+  border: 1px solid #ffc107; }
+  .has-warning .input-group-addon:not(:last-child) {
+    border-right: 0 none; }
+.has-warning .control-label {
+  color: #b48700; }
+
+.has-error .input-group-addon {
+  background-color: #fae3e5;
+  border: 1px solid #dc3545; }
+  .has-error .input-group-addon:not(:last-child) {
+    border-right: 0 none; }
+.has-error .control-label {
+  color: #dc3545; }
+
+.has-success .input-group-addon {
+  background-color: #f1fcf3;
+  border: 1px solid #28a745; }
+  .has-success .input-group-addon:not(:last-child) {
+    border-right: 0 none; }
+.has-success .control-label {
+  color: #28a745; }
+
 .select2-result-repository {
   padding-top: 4px;
   padding-bottom: 3px; }
