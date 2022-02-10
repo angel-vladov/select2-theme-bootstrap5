@@ -1,8 +1,8 @@
 A [Select2](https://select2.github.io/) v4 [Theme](https://select2.github.io/examples.html#themes) for Bootstrap 4  
-![select2-theme-bootstrap4 version](https://img.shields.io/badge/select2--theme--bootstrap4-v1.0.0-brightgreen.svg)
+![select2-theme-bootstrap5 version](https://img.shields.io/badge/select2--theme--bootstrap5-v1.0.0-brightgreen.svg)
 [![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
-Demonstrations [available](https://angel-vladov.github.io/select2-theme-bootstrap4/).
+Demonstrations [available](https://angel-vladov.github.io/select2-theme-bootstrap5/).
 
 #### Compatibility
 
@@ -10,22 +10,19 @@ Built and tested with Bootstrap v4 and Select2 v4.0.5 in latest Chrome, Firefox 
 
 #### Installation
 
-You can [download select2-bootstrap-theme from this GitHub repo](https://github.com/angel-vladov/select2-theme-bootstrap4/releases), install it using Bower or npm – required if you want to integrate the Sass or Less sources in your build process – or source the compiled CSS directly from CDNJS or jsDelivr.
+You can [download select2-bootstrap-theme from this GitHub repo](https://github.com/angel-vladov/select2-theme-bootstrap5/releases), install it using Bower or npm – required if you want to integrate the Sass or Less sources in your build process – or source the compiled CSS directly from CDNJS or jsDelivr.
 
 ##### Install using Bower or npm/yarn
 
-You may install select2-bootstrap-theme with [Bower](https://bower.io/), [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/):
+You may install select2-bootstrap-theme with [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/):
 
 ```shell
 
 // npm
-npm install select2-theme-bootstrap4
+npm install select2-theme-bootstrap5
 
 // yarn
-yarn add select2-theme-bootstrap4
-
-// Bower
-bower install select2-theme-bootstrap4
+yarn add select2-theme-bootstrap5
 ```
 
 ##### Source select2-bootstrap-theme from CDNJS or jsDelivr
@@ -36,7 +33,7 @@ bower install select2-theme-bootstrap4
 
 #### Usage
 
-select2-bootstrap-theme only works with Select2 v4.x. Applying the theme requires `select2-bootstrap.css` referenced after the default `select2.css` that comes with Select2:
+`select2-theme-bootstrap5` only works with Select2 v4.x. Applying the theme requires `select2-bootstrap.css` referenced after the default `select2.css` that comes with Select2:
 
 ```html
 <link rel="stylesheet" href="select2.css">
@@ -46,15 +43,15 @@ select2-bootstrap-theme only works with Select2 v4.x. Applying the theme require
 To apply the theme, tell Select2 to do so by passing `bootstrap` to the [`theme`](https://select2.github.io/examples.html#themes) option when initializing Select2:
 
 ```js
-$( "#dropdown" ).select2({
-    theme: "bootstrap"
+$('#dropdown').select2({
+    theme: 'bootstrap'
 });
 ```
 
 You may also set it as the default theme for all Select2 widgets like so:
 
 ```js
-$.fn.select2.defaults.set( "theme", "bootstrap" );
+$.fn.select2.defaults.set('theme', 'bootstrap');
 ```
 
 #### Changelog

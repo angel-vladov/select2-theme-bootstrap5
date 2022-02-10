@@ -2,23 +2,6 @@
 // Functions
 // --------------------------------------------------
 
-/**
- * We need a clone of bootstrap color-yiq mixin so we can get the same value for color
- */
-@function bs4-color-yiq($color) {
-  $r: red($color);
-  $g: green($color);
-  $b: blue($color);
-
-  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
-
-  @if ($yiq >= 150) {
-    @return "#111";
-  } @else {
-    @return "#fff";
-  }
-}
-
 //
 // Variables
 // --------------------------------------------------
@@ -31,8 +14,8 @@ $s2bs-border-radius-base: $border-radius !default;
 $s2bs-border-radius-large: $border-radius-lg !default;
 $s2bs-border-radius-small: $border-radius-sm !default;
 $s2bs-btn-default-bg: $input-group-addon-bg !default; // or $gray-200
-$s2bs-btn-default-border: theme-color("secondary") !default;
-$s2bs-btn-default-color: bs4-color-yiq($s2bs-btn-default-bg) !default;
+$s2bs-btn-default-border: map-get($theme-colors, "secondary") !default;
+$s2bs-btn-default-color: color-contrast($s2bs-btn-default-bg) !default;
 $s2bs-caret-width-base: .25rem !default; // 4px
 $s2bs-caret-width-large: .3125rem !default; // 5px
 
@@ -84,7 +67,7 @@ $s2bs-input-border-radius: $input-border-radius !default;
 $s2bs-input-height-base: $input-height !default;
 $s2bs-input-height-large: $input-height-lg !default;
 $s2bs-input-height-small: $input-height-sm !default;
-$s2bs-state-warning-text: theme-color("warning") !default;
+$s2bs-state-warning-text: map-get($theme-colors, "warning") !default;
 $s2bs-state-danger-text: $form-feedback-invalid-color !default;
 $s2bs-state-success-text: $form-feedback-valid-color !default;
 
@@ -641,7 +624,6 @@ $s2bs-form-control-transition: $input-transition !default;
 
       b {
         border-width: $s2bs-caret-width-large $s2bs-caret-width-large 0 $s2bs-caret-width-large;
-        margin-left: -$s2bs-caret-width-large;
         margin-left: -$s2bs-padding-large-vertical;
         margin-top: -$s2bs-caret-width-large/2;
       }
@@ -810,12 +792,12 @@ $s2bs-form-control-transition: $input-transition !default;
 .input-group > .select2-hidden-accessible {
   &:not(:first-child) + .select2-container--bootstrap > .selection > .select2-selection,
   &:not(:first-child) + .select2-container--bootstrap > .selection > .select2-selection.form-control {
-    @include border-left-radius(0);
+    @include border-start-radius(0);
   }
 
   + .select2-container--bootstrap:not(:last-child) > .selection > .select2-selection,
   + .select2-container--bootstrap:not(:last-child) > .selection > .select2-selection.form-control {
-    @include border-right-radius(0);
+    @include border-end-radius(0);
   }
 }
 
