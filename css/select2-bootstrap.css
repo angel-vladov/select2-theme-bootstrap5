@@ -1,12 +1,10 @@
 /*!
- * Select2 Bootstrap Theme v1.0.0 (https://angel-vladov.github.io/select2-theme-bootstrap4)
- * Copyright 2015-2020 Florian Kissling and contributors (https://github.com/select2/select2-bootstrap-theme/graphs/contributors)
- * Licensed under MIT (https://github.com/angel-vladov/select2-theme-bootstrap4/blob/master/LICENSE)
+ * Select2 Bootstrap 5 Theme v0.1.0 (https://angel-vladov.github.io/select2-theme-bootstrap5)
+ * Copyright 2022-2022 Angel Vladov and contributors (https://github.com/angel-vladov/select2-theme-bootstrap5/graphs/contributors)
+ * Based on the original select2/select2-bootstrap-theme theme by Florian Kissling and contributors (https://github.com/select2/select2-bootstrap-theme/graphs/contributors)
+ * Licensed under MIT (https://github.com/angel-vladov/select2-theme-bootstrap5/blob/master/LICENSE)
  */
 
-/**
- * We need a clone of bootstrap color-yiq mixin so we can get the same value for color
- */
 .select2-container--bootstrap {
   display: block;
   /*------------------------------------*\
@@ -21,9 +19,9 @@
    */
   /**
    * Adjust Select2's choices hover and selected styles to match
-   * Bootstrap 4's default dropdown styles.
+   * Bootstrap 5's default dropdown styles.
    *
-   * @see https://getbootstrap.com/docs/4.0/components/dropdowns/
+   * @see https://getbootstrap.com/docs/5.0/components/dropdowns/
    */
   /**
    * Clear the selection.
@@ -32,7 +30,7 @@
    * Address disabled Select2 styles.
    *
    * @see https://select2.github.io/examples.html#disabled
-   * @see hhttps://getbootstrap.com/docs/4.0/components/forms/#disabled-forms
+   * @see https://getbootstrap.com/docs/5.0/forms/overview/#disabled-forms
    */
   /*------------------------------------*\
       #DROPDOWN
@@ -55,7 +53,7 @@
    * 1. Reset Bootstrap defaults.
    * 2. Adjust the dropdown arrow button icon position.
    *
-   * @see https://getbootstrap.com/docs/4.0/components/forms/#sizing
+   * @see https://getbootstrap.com/docs/5.0/forms/form-control/#sizing
    */
   /* 1 */
   /*------------------------------------*\
@@ -64,16 +62,16 @@
 }
 
 .select2-container--bootstrap .select2-selection {
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  color: #212529;
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  color: #495057;
-  font-size: 1rem;
   outline: 0;
 }
 
@@ -90,16 +88,16 @@
 }
 
 .select2-container--bootstrap .select2-search--dropdown .select2-search__field {
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  color: #212529;
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  color: #495057;
-  font-size: 1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -157,17 +155,17 @@
 }
 
 .select2-container--bootstrap .select2-results__option[aria-disabled=true] {
-  color: #6c757d;
+  color: #adb5bd;
   cursor: not-allowed;
 }
 
 .select2-container--bootstrap .select2-results__option[aria-selected=true] {
-  background-color: #f8f9fa;
-  color: #16181b;
+  background-color: #e9ecef;
+  color: #1e2125;
 }
 
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
-  background-color: #007bff;
+  background-color: #0d6efd;
   color: #fff;
 }
 
@@ -214,9 +212,9 @@
 }
 
 .select2-container--bootstrap.select2-container--focus .select2-selection, .select2-container--bootstrap.select2-container--open .select2-selection {
-  border-color: #80bdff;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #86b7fe;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
 .select2-container--bootstrap.select2-container--open {
@@ -258,7 +256,7 @@
 }
 
 .select2-container--bootstrap .select2-selection__clear:hover {
-  color: "#111";
+  color: #000;
 }
 
 .select2-container--bootstrap.select2-container--disabled .select2-selection {
@@ -281,7 +279,7 @@
 }
 
 .select2-container--bootstrap .select2-dropdown {
-  border-color: #80bdff;
+  border-color: #86b7fe;
   overflow-x: hidden;
   margin-top: -1px;
 }
@@ -327,7 +325,7 @@
 }
 
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
-  color: #495057;
+  color: #212529;
   padding: 0;
 }
 
@@ -373,7 +371,7 @@
 }
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-  color: #495057;
+  color: #212529;
   background: #e9ecef;
   border: 1px solid #6c757d;
   border-radius: 0.25rem;
@@ -403,7 +401,7 @@
 }
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove:hover {
-  color: "#111";
+  color: #000;
 }
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear {
@@ -484,7 +482,6 @@
 .input-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b,
 .form-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
   border-width: 0.3125rem 0.3125rem 0 0.3125rem;
-  margin-left: -0.3125rem;
   margin-left: -0.5rem;
   margin-top: -0.15625rem;
 }
@@ -614,30 +611,30 @@
  * You may apply said classes to the Select2 dropdown (body > .select2-container)
  * via JavaScript match Bootstraps' to make its styles match.
  *
- * @see https://getbootstrap.com/docs/4.0/components/forms/#validation
+ * @see https://getbootstrap.com/docs/5.0/forms/validation/
  */
 .is-valid .select2-dropdown,
 .is-valid .select2-selection {
-  border-color: #28a745;
+  border-color: #198754;
 }
 
 .is-valid .select2-container--focus .select2-selection,
 .is-valid .select2-container--open .select2-selection {
-  border-color: #1e7e34;
+  border-color: #115c39;
 }
 
 .is-valid .select2-container--focus .select2-selection:focus,
 .is-valid .select2-container--open .select2-selection:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
 }
 
 .is-valid.select2-drop-active {
-  border-color: #1e7e34;
+  border-color: #115c39;
 }
 
 .is-valid.select2-drop-active.select2-drop.select2-drop-above {
-  border-top-color: #1e7e34;
+  border-top-color: #115c39;
 }
 
 .is-invalid .select2-dropdown,
@@ -715,33 +712,33 @@
 
 .has-success .select2-dropdown,
 .has-success .select2-selection {
-  border-color: #28a745;
+  border-color: #198754;
 }
 
 .has-success .select2-container--focus .select2-selection,
 .has-success .select2-container--open .select2-selection {
-  border-color: #1e7e34;
+  border-color: #115c39;
 }
 
 .has-success .select2-container--focus .select2-selection:focus,
 .has-success .select2-container--open .select2-selection:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
 }
 
 .has-success.select2-drop-active {
-  border-color: #1e7e34;
+  border-color: #115c39;
 }
 
 .has-success.select2-drop-active.select2-drop.select2-drop-above {
-  border-top-color: #1e7e34;
+  border-top-color: #115c39;
 }
 
 /**
  * Select2 widgets in Bootstrap Input Groups
  *
  * @see https://getbootstrap.com/docs/4.0/components/input-group/
- * @see https://github.com/twbs/bootstrap/blob/v4.4.1/scss/_input-group.scss
+ * @see https://github.com/twbs/bootstrap/blob/v5.1.3/scss/forms/_input-group.scss
  */
 /**
  * Reset rounded corners
@@ -776,7 +773,7 @@
    * Multi Select2's height which - depending on how many elements have been selected -
    * may grow taller than its initial size.
    *
-   * @see https://github.com/twbs/bootstrap/blob/v4.4.1/scss/_input-group.scss
+   * @see https://github.com/twbs/bootstrap/blob/v5.1.3/scss/forms/_input-group.scss
    */
 }
 
@@ -800,10 +797,8 @@
 }
 
 .input-group > .select2-container--bootstrap,
-.input-group > .select2-container--bootstrap .input-group-append,
-.input-group > .select2-container--bootstrap .input-group-prepend,
-.input-group > .select2-container--bootstrap .input-group-append .btn,
-.input-group > .select2-container--bootstrap .input-group-prepend .btn {
+.input-group > .select2-container--bootstrap .input-group-text,
+.input-group > .select2-container--bootstrap .input-group-text .btn {
   vertical-align: top;
 }
 
@@ -819,13 +814,4 @@
 .form-control.select2-hidden-accessible {
   position: absolute !important;
   width: 1px !important;
-}
-
-/**
- * Display override for inline forms
- */
-@media (min-width: 576px) {
-  .form-inline .select2-container--bootstrap {
-    display: inline-block;
-  }
 }
