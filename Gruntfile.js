@@ -66,7 +66,7 @@ module.exports = function(grunt) {
             dest: 'docs/css/bootstrap.min.css'
           },
           {
-            src: 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+            src: 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
             dest: 'docs/js/bootstrap.min.js'
           },
           {
@@ -181,8 +181,9 @@ module.exports = function(grunt) {
     stamp: {
       options: {
         banner: '/*!\n' +
-                ' * Select2 Bootstrap Theme v<%= package.version %> (<%= package.homepage %>)\n' +
-                ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= package.author %> and contributors (https://github.com/select2/select2-bootstrap-theme/graphs/contributors)\n' +
+                ' * Select2 Bootstrap 5 Theme v<%= package.version %> (<%= package.homepage %>)\n' +
+                ' * Copyright 2022-<%= grunt.template.today("yyyy") %> <%= package.author %> and contributors (https://github.com/angel-vladov/select2-theme-bootstrap5/graphs/contributors)\n' +
+                ' * Based on the original select2/select2-bootstrap-theme theme by Florian Kissling and contributors (https://github.com/select2/select2-bootstrap-theme/graphs/contributors)\n' +
                 ' * Licensed under MIT (https://github.com/angel-vladov/select2-theme-bootstrap5/blob/master/LICENSE)\n' +
                 ' */\n'
       },

@@ -6,12 +6,12 @@
 
 		<div class="container">
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="default" class="form-label">Default textbox</label>
 				<input id="default" type="text" class="form-control" placeholder="Placeholder text">
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="single" class="form-label">Select2 single select</label>
 				<select id="single" class="form-control select2-single">
 					<option></option>
@@ -19,7 +19,7 @@
 				</select>
 			</div>
 
-			<div class="form-group">
+			<div class="mb-0">
 				<label for="multiple" class="form-label">Select2 multi select</label>
 				<select id="multiple" class="form-control select2-multiple" multiple>
 					{% include select2-select.html %}
@@ -30,7 +30,7 @@
 				<h1 id="input-groups">Input Groups</h1>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="select2-single-append" class="form-label">Select2 append Checkbox</label>
 				<div class="input-group">
 					<div class="input-group-text">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="single-append-radio" class="form-label">Select2 multi append Radiobutton</label>
 				<div class="input-group">
 					<div class="input-group-text">
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="single-append-text" class="form-label">Select2 append</label>
 				<div class="input-group">
 					<select id="single-append-text" class="form-control select2-allow-clear">
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="single-prepend-text" class="form-label">Select2 prepend</label>
 				<div class="input-group">
 					<button class="btn btn-secondary" type="button" data-select2-open="single-prepend-text">
@@ -83,7 +83,7 @@
 				</div>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="multi-append" class="form-label">Select2 multi append</label>
 				<div class="input-group">
 					<select id="multi-append" class="form-control select2-multiple" multiple>
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="multi-prepend" class="form-label">Select2 multi prepend</label>
 				<div class="input-group">
 					<button class="btn btn-secondary" type="button" data-select2-open="multi-prepend">
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 
-			<div class="form-group mb-3">
+			<div class="mb-3">
 				<label for="multi-prepend-append" class="form-label">Select2 multi append + prepend</label>
 				<div class="input-group">
 					<button class="btn btn-secondary" type="button" data-select2-open="multi-prepend-append">
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 
-			<div class="form-group">
+			<div class="mb-0">
 				<label for="input-group-only" class="form-label">Select2 in input-group <em>(no append or prepend)</em></label>
 				<div class="input-group">
 					<select id="input-group-only" class="form-control select2-multiple" multiple>
@@ -145,10 +145,10 @@
 
 			<p>
 				The theme offers styles to display "small" and "large" Select2 widgets in
-				<a href="https://getbootstrap.com/docs/4.0/components/input-group/">Bootstrap Input Groups</a> with
-				<a href="https://getbootstrap.com/docs/4.0/components/input-group/#sizing">Bootstrap Control Sizing</a> classes applied
+				<a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Bootstrap Input Groups</a> with
+				<a href="https://getbootstrap.com/docs/5.1/forms/input-group/#sizing">Bootstrap Control Sizing</a> classes applied
 				(e. g. Select2 in <code>.input-group.input-group-sm</code> or <code>.input-group.input-group-lg</code>).
-				You may also apply the <a href="https://getbootstrap.com/docs/4.0/components/input-group/#sizing">Bootstrap Control Sizing</a>
+				You may also apply the <a href="https://getbootstrap.com/docs/5.1/forms/input-group/#sizing">Bootstrap Control Sizing</a>
 				classes directly to the <code>.select2-container</code> to alter its appearance.
 			</p>
 
@@ -175,18 +175,16 @@
 					<label for="bootstrap-input-sm" class="form-label">Bootstrap input</label>
 					<input id="bootstrap-input-sm" class="form-control input-sm" placeholder=".input-sm">
 				</div>
-				<div class="col-md-3">
-					<div class="form-group has-success">
-						<label for="select2-single-input-group-sm" class="form-label">col-md-3</label>
-						<div class="input-group input-group-sm">
-							<div class="input-group-text">
-								<input class="form-check-input mt-0" type="radio">
-							</div>
-							<select id="select2-single-input-group-sm" class="form-control select2-single">
-								<option></option>
-								{% include select2-select.html %}
-							</select>
+				<div class="col-md-3 has-success">
+					<label for="select2-single-input-group-sm" class="form-label">col-md-3</label>
+					<div class="input-group input-group-sm">
+						<div class="input-group-text">
+							<input class="form-check-input mt-0" type="radio">
 						</div>
+						<select id="select2-single-input-group-sm" class="form-control select2-single">
+							<option></option>
+							{% include select2-select.html %}
+						</select>
 					</div>
 				</div>
 			</div>
@@ -198,7 +196,7 @@
 					<select id="select2-multiple" class="form-control select2-multiple" multiple>
 						{% include select2-select.html %}
 					</select>
-					<small class="form-text text-muted">Example <a href="https://getbootstrap.com/docs/4.0/components/forms/#help-text">block-level help text</a>.</small>
+					<small class="form-text text-muted">Example <a href="https://getbootstrap.com/docs/5.0/forms/overview/#form-text">block-level help text</a>.</small>
 				</div>
 				<div class="col-md-3">
 					<label for="span_small" class="form-label">col-md-3</label>
@@ -211,17 +209,15 @@
 					<input id="span-medium" class="form-control" placeholder=".col-md-2">
 				</div>
 				<div class="col-md-3">
-					<div class="form-group">
-						<label for="span_large" class="form-label">col-md-3</label>
-						<div class="input-group">
-							<div class="input-group-text">
-								<input class="form-check-input mt-0" type="checkbox" checked>
-							</div>
-							<select id="span_large" class="form-control select2-single">
-								<option></option>
-								{% include select2-select.html %}
-							</select>
+					<label for="span_large" class="form-label">col-md-3</label>
+					<div class="input-group">
+						<div class="input-group-text">
+							<input class="form-check-input mt-0" type="checkbox" checked>
 						</div>
+						<select id="span_large" class="form-control select2-single">
+							<option></option>
+							{% include select2-select.html %}
+						</select>
 					</div>
 				</div>
 			</div>
@@ -244,18 +240,16 @@
 					<label for="bootstrap-input-lg" class="form-label">Bootstrap input</label>
 					<input id="bootstrap-input-lg" class="form-control form-control-lg" placeholder=".input-lg">
 				</div>
-				<div class="col-md-3">
-					<div class="form-group has-error">
-						<label for="select2-multiple-input-group-lg" class="form-label">col-md-3</label>
-						<div class="input-group input-group-lg">
-							<div class="input-group-text">
-								<input class="form-check-input mt-0" mt-0 type="radio">
-							</div>
-							<select id="select2-multiple-input-group-lg" class="form-control select2-single">
-								<option></option>
-								{% include select2-select.html %}
-							</select>
+				<div class="col-md-3 has-error">
+					<label for="select2-multiple-input-group-lg" class="form-label">col-md-3</label>
+					<div class="input-group input-group-lg">
+						<div class="input-group-text">
+							<input class="form-check-input mt-0" mt-0 type="radio">
 						</div>
+						<select id="select2-multiple-input-group-lg" class="form-control select2-single">
+							<option></option>
+							{% include select2-select.html %}
+						</select>
 					</div>
 				</div>
 			</div>
@@ -265,12 +259,12 @@
 			</h2>
 
 			<p>
-				The theme's styles work in <a href="https://getbootstrap.com/docs/4.0/components/forms/#horizontal-form">Bootstrap's Horizontal Forms</a>
-				and offers support for <a href="https://getbootstrap.com/docs/4.0/components/forms/#horizontal-form-label-sizing">Horizontal Form Group Sizes</a>, too.
+				The theme's styles work in <a href="https://getbootstrap.com/docs/5.0/forms/layout/#horizontal-form">Bootstrap's Horizontal Forms</a>
+				and offers support for <a href="https://getbootstrap.com/docs/5.0/forms/layout/#horizontal-form-label-sizing">Horizontal Form Group Sizes</a>, too.
 			</p>
 
 			<form class="form-horizontal">
-				<div class="form-group row">
+				<div class="row">
 					<label class="col-sm-2 col-form-label col-form-label-lg" for="formGroupInputLarge">Large label</label>
 
 					<div class="col-sm-5">
@@ -284,7 +278,7 @@
 					</div>
 				</div>
 
-				<div class="form-group form-group-sm row">
+				<div class="row">
 					<label class="col-sm-2 col-form-label col-form-label-sm" for="formGroupInputSmall">Small label</label>
 
 					<div class="col-sm-5">
@@ -298,7 +292,7 @@
 					</div>
 				</div>
 
-				<div class="form-group row">
+				<div class="row">
 					<label for="select2-horizontal-3" class="col-sm-2 col-form-label">Email</label>
 					<div class="col-sm-10">
 						<select id="select2-horizontal-3" class="form-control js-data-example-ajax" multiple>
@@ -308,7 +302,7 @@
 					</div>
 				</div>
 
-				<div class="form-group row">
+				<div class="row">
 					<label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
 
 					<div class="col-sm-10">
@@ -316,7 +310,7 @@
 					</div>
 				</div>
 
-				<div class="form-group row">
+				<div class="row">
 					<div class="col-sm-offset-2 col-sm-10">
 						<div class="form-check">
 							<label class="form-check-label">
@@ -326,7 +320,7 @@
 					</div>
 				</div>
 
-				<div class="form-group row">
+				<div class="row">
 					<div class="col-sm-offset-2 col-sm-10">
 						<button type="submit" class="btn btn-secondary">Sign in</button>
 					</div>
@@ -387,7 +381,7 @@
 				</h1>
 			</div>
 
-			<p>Tests for Select2 widgets used in context with Bootstrap's <a href="https://getbootstrap.com/docs/4.0/components/input-group/#button-addons">Button Addons</a>.</p>
+			<p>Tests for Select2 widgets used in context with Bootstrap's <a href="https://getbootstrap.com/docs/5.0/forms/input-group/#button-addons">Button Addons</a>.</p>
 
 			<div class="row">
 				<div class="col-md-7">
@@ -420,16 +414,16 @@
 				<div class="col-md-7">
 					<label for="select2-button-addons-single-input-group" class="form-label">Select2 custom data load</label>
 					<div class="input-group">
-						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Action <span class="caret"></span>
 						</button>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Separated link</a>
-						</div>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Separated link</a></li>
+						</ul>
 						<select id="select2-button-addons-single-input-group" class="form-control js-data-example-ajax">
 							<option value="3620194" selected="selected">select2/select2</option>
 						</select>
@@ -481,38 +475,34 @@
 			</div>
 
 			<p>
-				The theme applies Bootstrap's styles for <a href="https://getbootstrap.com/docs/4.0/components/forms/#disabled-forms">disabled input elements</a>
+				The theme applies Bootstrap's styles for <a href="https://getbootstrap.com/docs/5.0/forms/overview/#disabled-forms">disabled input elements</a>
 				and for disabled dropdown options to the Select2 widgets and its options. Also see Select2's documentation on its
 				"<a href="https://select2.github.io/examples.html#disabled">Disabled mode</a>".
 			</p>
 
 			<div class="row">
 				<div class="col-md-6">
-					<div class="form-group">
-						<label for="select2-disabled-inputs-single" class="form-label">Select2 single</label>
-						<div class="input-group">
-							<div class="input-group-text">
-								<input class="form-check-input mt-0" type="checkbox">
-							</div>
-							<select id="select2-disabled-inputs-single" class="form-control select2-single" disabled>
-								<option></option>
-								{% include select2-select.html %}
-							</select>
+					<label for="select2-disabled-inputs-single" class="form-label">Select2 single</label>
+					<div class="input-group">
+						<div class="input-group-text">
+							<input class="form-check-input mt-0" type="checkbox">
 						</div>
+						<select id="select2-disabled-inputs-single" class="form-control select2-single" disabled>
+							<option></option>
+							{% include select2-select.html %}
+						</select>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="form-group">
-						<label for="select2-disabled-inputs-multiple" class="form-label">Select2 multiple</label>
-						<div class="input-group">
-							<div class="input-group-text">
-								<input class="form-check-input mt-0" type="checkbox" checked>
-							</div>
-							<select id="select2-disabled-inputs-multiple" class="form-control select2-multiple" multiple>
-								<option></option>
-								{% include select2-select.html %}
-							</select>
+					<label for="select2-disabled-inputs-multiple" class="form-label">Select2 multiple</label>
+					<div class="input-group">
+						<div class="input-group-text">
+							<input class="form-check-input mt-0" type="checkbox" checked>
 						</div>
+						<select id="select2-disabled-inputs-multiple" class="form-control select2-multiple" multiple>
+							<option></option>
+							{% include select2-select.html %}
+						</select>
 					</div>
 				</div>
 			</div>
@@ -532,17 +522,17 @@
 			// widgets.
 			//
 			// @see https://github.com/select2/select2/issues/2927
-			$.fn.select2.defaults.set( "theme", "bootstrap" );
+			$.fn.select2.defaults.set('theme', 'bootstrap');
 
-			var placeholder = "Select a State";
+			var placeholder = 'Select a State';
 
-			$( ".select2-single, .select2-multiple" ).select2( {
+			$('.select2-single, .select2-multiple').select2( {
 				placeholder: placeholder,
 				width: null,
 				containerCssClass: ':all:'
 			} );
 
-			$( ".select2-allow-clear" ).select2( {
+			$('.select2-allow-clear' ).select2( {
 				allowClear: true,
 				placeholder: placeholder,
 				width: null,
@@ -580,7 +570,7 @@
 				width : null,
 				containerCssClass: ':all:',
 				ajax: {
-					url: "https://api.github.com/search/repositories",
+					url: 'https://api.github.com/search/repositories',
 					dataType: 'json',
 					delay: 250,
 					data: function (params) {
@@ -611,12 +601,12 @@
 				templateSelection: formatRepoSelection
 			});
 
-			$( "button[data-select2-open]" ).click( function() {
-				$( "#" + $( this ).data( "select2-open" ) ).select2( "open" );
+			$('button[data-select2-open]').click( function() {
+				$('#' + $( this ).data('select2-open')).select2('open');
 			});
 
-			$( ":checkbox" ).on( "click", function() {
-				$( this ).parent().nextAll( "select" ).prop( "disabled", !this.checked );
+			$(':checkbox').on('click', function() {
+				$(this).parent().nextAll('select' ).prop('disabled', !this.checked);
 			});
 
 			// copy Bootstrap validation states to Select2 dropdown
@@ -625,13 +615,13 @@
 			// (was #select2-drop in Select2 v3.x, in Select2 v4 can be selected via
 			// body > .select2-container) if _any_ of the opened Select2's parents
 			// has one of these forementioned classes (YUCK! ;-))
-			$( ".select2-single, .select2-multiple, .select2-allow-clear, .js-data-example-ajax" ).on( "select2:open", function() {
-				if ( $( this ).parents( "[class*='has-']" ).length ) {
-					var classNames = $( this ).parents( "[class*='has-']" )[ 0 ].className.split( /\s+/ );
+			$('.select2-single, .select2-multiple, .select2-allow-clear, .js-data-example-ajax').on('select2:open', function() {
+				if ($(this).parents( "[class*='has-']").length) {
+					var classNames = $(this).parents("[class*='has-']")[ 0 ].className.split(/\s+/);
 
-					for ( var i = 0; i < classNames.length; ++i ) {
-						if ( classNames[ i ].match( "has-" ) ) {
-							$( "body > .select2-container" ).addClass( classNames[ i ] );
+					for (var i = 0; i < classNames.length; ++i) {
+						if (classNames[i].match("has-") ) {
+							$('body > .select2-container').addClass(classNames[i]);
 						}
 					}
 				}
