@@ -488,7 +488,7 @@ $s2bs-form-control-transition: $input-transition !default;
 
     .select2-selection__rendered {
       box-sizing: border-box;
-      display: block;
+      display: inline;
       line-height: $s2bs-line-height-base;
       list-style: none;
       margin: 0;
@@ -541,6 +541,9 @@ $s2bs-form-control-transition: $input-transition !default;
       display: inline-block;
       font-weight: bold;
       margin-right: $s2bs-padding-base-vertical * .5;
+      background-color: transparent;
+      border: none;
+      padding: 0;
 
       &:hover {
         color: $s2bs-remove-choice-hover-color;
