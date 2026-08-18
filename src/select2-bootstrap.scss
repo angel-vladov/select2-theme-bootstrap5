@@ -538,14 +538,13 @@ $s2bs-form-control-transition: $input-transition !default;
         min-width: 5em;
       }
 
-      /**
-       * Select2 v4.1 swaps the inline search <input> for a <textarea>,
-       * which top-aligns its text where the <input> centered it. Its base
-       * styles also force `font-family: sans-serif` and
-       * `::placeholder { line-height: normal }` on it.
-       */
-
       textarea.select2-search__field {
+        /**
+         * Select2 v4.1 swaps the inline search <input> for a <textarea>,
+         * which top-aligns its text where the <input> centered it. Its base
+         * styles also force `font-family: sans-serif` and
+         * `::placeholder { line-height: normal }` on it.
+         */
         font-family: inherit;
         padding-top: $s2bs-search-padding-base-vertical;
         padding-bottom: $s2bs-search-padding-base-vertical;
