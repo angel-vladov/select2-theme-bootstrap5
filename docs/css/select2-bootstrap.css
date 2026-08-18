@@ -345,6 +345,13 @@
      * Minus 2px borders.
      */
   /**
+     * Select2 v4.1 renders the inline search as a direct child of the
+     * selection - a sibling after the choices <ul> - instead of a floated
+     * <li> inside it. Dissolve the <ul> box so choices and search share
+     * one float flow again, and contain the floated choices here instead.
+     * Both selectors only match the v4.1 markup; v4.0.x is unaffected.
+     */
+  /**
      * Clear the selection.
      */
 }
@@ -382,6 +389,15 @@
   padding: 0 0.375rem;
 }
 
+.select2-container--bootstrap .select2-selection--multiple .select2-search--inline {
+  /**
+       * Select2 v4.1 swaps the inline search <input> for a <textarea>,
+       * which top-aligns its text where the <input> centered it. Its base
+       * styles also force `font-family: sans-serif` and
+       * `::placeholder { line-height: normal }` on it.
+       */
+}
+
 .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field {
   background: transparent;
   padding: 0 0.75rem;
@@ -392,12 +408,43 @@
   min-width: 5em;
 }
 
+.select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field {
+  font-family: inherit;
+  padding-top: -webkit-calc(0.375rem + 1px);
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: -webkit-calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field::-webkit-input-placeholder {
+  line-height: inherit;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field::-moz-placeholder {
+  line-height: inherit;
+}
+
+.select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field::placeholder {
+  line-height: inherit;
+}
+
+.select2-container--bootstrap .select2-selection--multiple:has(> .select2-search--inline) {
+  overflow: hidden;
+}
+
+.select2-container--bootstrap .select2-selection--multiple:has(> .select2-search--inline) .select2-selection__rendered {
+  display: contents;
+}
+
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove {
   color: #6c757d;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
   margin-right: 0.1875rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove:hover {
@@ -452,6 +499,15 @@
   height: -webkit-calc(1.5em + 0.5rem + 2px);
   height: calc(1.5em + 0.5rem + 2px);
   line-height: 1.5;
+}
+
+.select2-container--bootstrap .select2-selection--multiple.form-control-sm .select2-search--inline textarea.select2-search__field,
+.input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field,
+.form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field {
+  padding-top: -webkit-calc(0.25rem + 1px);
+  padding-top: calc(0.25rem + 1px);
+  padding-bottom: -webkit-calc(0.25rem + 1px);
+  padding-bottom: calc(0.25rem + 1px);
 }
 
 .select2-container--bootstrap .select2-selection--multiple.form-control-sm .select2-selection__clear,
@@ -513,6 +569,15 @@
   height: -webkit-calc(1.5em + 1rem + 2px);
   height: calc(1.5em + 1rem + 2px);
   line-height: 1.5;
+}
+
+.select2-container--bootstrap .select2-selection--multiple.form-control-lg .select2-search--inline textarea.select2-search__field,
+.input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field,
+.form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline textarea.select2-search__field {
+  padding-top: -webkit-calc(0.5rem + 1px);
+  padding-top: calc(0.5rem + 1px);
+  padding-bottom: -webkit-calc(0.5rem + 1px);
+  padding-bottom: calc(0.5rem + 1px);
 }
 
 .select2-container--bootstrap .select2-selection--multiple.form-control-lg .select2-selection__clear,
@@ -786,10 +851,16 @@
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  /**
+     * Select2 v4.1 dropped the containerCssClass option (renamed to
+     * selectionCssClass), so the selection no longer carries .form-control
+     * and its `width: 100%` - state it here for both versions.
+     */
 }
 
-.input-group > .select2-container--bootstrap > .selection > .select2-selection.form-control {
+.input-group > .select2-container--bootstrap > .selection > .select2-selection {
   float: none;
+  width: 100%;
 }
 
 .input-group > .select2-container--bootstrap.select2-container--open, .input-group > .select2-container--bootstrap.select2-container--focus {
