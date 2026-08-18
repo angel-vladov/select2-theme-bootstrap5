@@ -53,6 +53,9 @@ $.fn.select2.defaults.set('theme', 'bootstrap');
 
 ### Changelog
 
+##### 0.2.0
+* Dropped unpublished `grunt-stamp` dependency
+
 ##### 0.1.1
 * `libsass` friendly division by 2
 * Added additional select2 examples
