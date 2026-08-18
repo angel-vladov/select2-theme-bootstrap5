@@ -1,6 +1,6 @@
 # select2-theme-bootstrap5
 
-![select2-theme-bootstrap5 version](https://img.shields.io/badge/select2--theme--bootstrap5-v0.1.1-brightgreen.svg)
+![select2-theme-bootstrap5 version](https://img.shields.io/badge/select2--theme--bootstrap5-v0.2.0-brightgreen.svg)
 [![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
 A [Select2](https://select2.github.io/) v4 [Theme](https://select2.github.io/examples.html#themes) for Bootstrap 5
