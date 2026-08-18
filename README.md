@@ -53,6 +53,11 @@ $.fn.select2.defaults.set('theme', 'bootstrap');
 
 ### Changelog
 
+##### 0.2.0
+* Select2 4.1.x support. With 4.1 also pass `selectionCssClass: ':all:'` (renamed from `containerCssClass`)
+* Demo pages load the full jQuery build, fixing the AJAX examples
+* Dropped unpublished `grunt-stamp` dependency
+
 ##### 0.1.1
 * `libsass` friendly division by 2
 * Added additional select2 examples
